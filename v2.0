@@ -9,7 +9,7 @@
 // main class
 int main(int argc, char** argv)
 {
-	//int for up position
+	//array for 4 positions initalized
 	int position[3];
 
 
@@ -24,6 +24,7 @@ int main(int argc, char** argv)
 	printf("	  Enter 4 position numbers for up, down, right          \n");
 	printf("************************************************************\n");
 
+	//print statement and input for position with applied arrays
 	printf("Enter a number for the up position: ");
 	scanf_s("%d", &position[0]);
 	printf("Enter a number for the down position: ");
@@ -33,19 +34,20 @@ int main(int argc, char** argv)
 	printf("Enter a number for the right position: ");
 	scanf_s("%d", &position[3]);
 }
-
+	//if statement for correct number to recieve snake food
 	if (&position[0,1,2,3] == 10) {
-		//add functions
+		//print statement for food recieved and score applied.
 		printf("You got snake food for the up position!", Score());
+	//else statement for incorrect number input to receive snake food and score decrease
 	}else {
 		printf("Wrong value for the up position! snake gets no food.", score(-1));
 		}
 	}
-
+	//void function for input scoring
 void Score(int score)
 {
 	int i;
-
+	//for loop for incrimenting array
 	for (int i = 0; i < 10; ++i) {
 		if (position[0,1,2,3] == 10)
 		{
