@@ -1,0 +1,55 @@
+/*Devyn Hodges
+*Snake Game
+*Version 2.0
+*Edited 3/17/21
+*/
+
+#include <stdio.h>
+
+// main class
+int main(int argc, char** argv)
+{
+	//int for up position
+	int position[3];
+
+
+	//Gameplay instruction
+	printf("************************************************************\n");
+	printf("                 Welcome to the Snake Game                   \n");
+	printf("************************************************************\n");
+	printf("*****************Gameplay Instructions**********************\n");
+	printf("************************************************************\n");
+	printf("For this game the user is to input a number between 1 and 10\n");
+	printf("************************************************************\n");
+	printf("	  Enter 4 position numbers for up, down, right          \n");
+	printf("************************************************************\n");
+
+	printf("Enter a number for the up position: ");
+	scanf_s("%d", &position[0]);
+	printf("Enter a number for the down position: ");
+	scanf_s("%d", &position[1]);
+	printf("Enter a number for the left position: ");
+	scanf_s("%d", &position[2]);
+	printf("Enter a number for the right position: ");
+	scanf_s("%d", &position[3]);
+}
+
+	if (&position[0,1,2,3] == 10) {
+		//add functions
+		printf("You got snake food for the up position!", Score());
+	}else {
+		printf("Wrong value for the up position! snake gets no food.", score(-1));
+		}
+	}
+
+void Score(int score)
+{
+	int i;
+
+	for (int i = 0; i < 10; ++i) {
+		if (position[0,1,2,3] == 10)
+		{
+			printf("Your score is %d\n",	score);
+		}
+	}
+}
